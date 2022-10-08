@@ -19,6 +19,15 @@ app.set("port", 4000);
 app.use(morgan("dev"));
 app.use(express.json());
 
+/* Endpoint de Raiz */
+
+app.get("/", (req, res) => {
+    const status = 404;
+    const mymeType = { "Content-type": "text/html" };
+    res.writeHead(status, mymeType);
+    res.write(`<html> <body> <img src="https://http.cat/200" alt=""> </body> </html>`);
+});
+
 /* Middleware que se ejecuta cada que inicia el servidor */
 app.use("/api/books", bookRoutes);
 

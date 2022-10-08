@@ -78,7 +78,7 @@ async function updateBook(body, title, total_pages, author, nationality, languag
 // Requiere: Endpoint, ID
 async function deleteBook(body, response) {
     const connection = await getConnection();
-    console.log(body.id);
+    // console.log(body.id);
     // Query SQL donde especifica: SELECCIONAR TODOS DESDE books DONDE EL ID SEA <id>
     const result = await connection.query("DELETE FROM books WHERE id = ?", body.id);
     return response.json(result);
