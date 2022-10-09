@@ -2,7 +2,7 @@
  * Import de Modulos Necesarios
  */
 import express from "express";
-import morgan from "morgan";
+// import morgan from "morgan";
 // Importar rutas desde el archivo de rutas
 import bookRoutes from "./routes/index.routes.js";
 import productRoutes from "./routes/index.routes.js";
@@ -14,7 +14,7 @@ const app = express();
 app.set("port", process.env.PORT || 4000);
 
 /* Middlewares */
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 app.use(express.json());
 
 /* Endpoint de Raiz */
