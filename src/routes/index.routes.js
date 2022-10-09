@@ -1,6 +1,6 @@
 // Importar Router y Metodos/Controladores
 import { Router } from "express";
-import { methods as bookControllers } from "./../controllers/product.controller";
+import { methods as bookControllers } from "./../controllers/product.controller.js";
 // Inicializar Router
 const router = Router();
 // Verbos para Rutas (Consultar Todos/Uno, Añadir, Update, Delete)

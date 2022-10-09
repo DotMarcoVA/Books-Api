@@ -1,5 +1,5 @@
 // Importar la conexion realizada
-import { getConnection } from "./../common/connection";
+import { getConnection } from "./../common/connection.js";
 
 // Funcion Readbooks la cual contiene el QuerySQL para traer toda la informacion
 // Requiere: Endpoint

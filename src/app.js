@@ -3,17 +3,15 @@
  */
 import express from "express";
 import morgan from "morgan";
-
-import bookRoutes from "./routes/index.routes";
-
 // Importar rutas desde el archivo de rutas
-import productRoutes from "./routes/index.routes";
+import bookRoutes from "./routes/index.routes.js";
+import productRoutes from "./routes/index.routes.js";
 
 // Llamar express en variable
 const app = express();
 
 /* Setear el puerto a 4000 */
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 4000);
 
 /* Middlewares */
 app.use(morgan("dev"));

@@ -1,5 +1,6 @@
 // Importar app para llamar al servidor express
-import app from "./app";
+
+import app from "./app.js";
 import doge from "ascii-doge";
 // Funcion Main para inicializar el Proyecto haciendo uso de App
 const main = () => {

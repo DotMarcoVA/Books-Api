@@ -1,5 +1,5 @@
 // Importar servicios
-import { methods as bookServices } from "./../services/product.services";
+import { methods as bookServices } from "./../services/product.services.js";
 
 // Instanciar Metodos
 // Metodo GetBooks que trae TODOS los Libros
