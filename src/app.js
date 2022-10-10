@@ -20,7 +20,7 @@ app.use(express.json());
 /* Endpoint de Raiz */
 
 app.get("/", (req, res) => {
-    const status = 404;
+    const status = 200;
     const mymeType = { "Content-type": "text/html" };
     res.writeHead(status, mymeType);
     res.write(`<html> <body> <img src="https://http.cat/200" alt=""> </body> </html>`);
